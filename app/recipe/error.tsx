@@ -1,4 +1,5 @@
 "use client";
+// Client Component required: needs onClick + interactive retry state
 
 export default function Error({
   error,
