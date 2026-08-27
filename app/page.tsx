@@ -1,4 +1,15 @@
-// File-based routing: this file = the "/" route
+// Client Component: needs "use client" since it uses useState + onClick
+"use client";
+
+import { useState } from "react";
+
 export default function Home() {
-  return <h1>Hello Lívia</h1>;
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Add</button>
+    </div>
+  );
 }
